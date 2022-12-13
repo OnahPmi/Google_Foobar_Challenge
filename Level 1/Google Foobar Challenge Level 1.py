@@ -1,20 +1,4 @@
-def test_cases():
-
-    test_datasets = ["Lzmxv & Jzmrxv", "wrw blf hvv ozhg mrtsg'h vkrhlwv?", 
-                     "Yvzs! I xzm’g yvorvev Lzmxv olhg srh qly zg gsv xlolmb!!"]
-    
-    answers =["Lance & Janice", "did you see last night's episode?", 
-              "Yeah! I can’t believe Lance lost his job at the colony!!"]
-    
-    counts = range(1, len(answers)+1, 1)
-    for test_dataset, answer, count in zip(test_datasets, answers, counts):
-        if solution(test_dataset) == answer:
-            print(f"Test {count} passed!")
-        else:
-            print(f"Test {count} failed!")
-
-
-# Solutuions
+# Method 1
 
 # This is the solution that was submitted
 
@@ -62,8 +46,6 @@ def solution(s):
     deciphered_string = "".join(my_list) 
     return deciphered_string
 
-test_cases()
-
 # Method 2
 def solution(s):
     import string
@@ -83,4 +65,19 @@ def solution(s):
 
     return answer
 
-test_cases()
+# Some Test Cases
+
+def test_cases():
+
+    test_datasets = ["Lzmxv & Jzmrxv", "wrw blf hvv ozhg mrtsg'h vkrhlwv?", 
+                     "Yvzs! I xzm’g yvorvev Lzmxv olhg srh qly zg gsv xlolmb!!"]
+    
+    answers =["Lance & Janice", "did you see last night's episode?", 
+              "Yeah! I can’t believe Lance lost his job at the colony!!"]
+    
+    counts = range(1, len(answers)+1, 1)
+    for test_dataset, answer, count in zip(test_datasets, answers, counts):
+        if solution(test_dataset) == answer:
+            print(f"Test {count} passed!")
+        else:
+            print(f"Test {count} failed!")

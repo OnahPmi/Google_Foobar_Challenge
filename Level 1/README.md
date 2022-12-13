@@ -1,4 +1,4 @@
-# Level 1
+# Level one: I Love Lance & Janice
 
 # Requirements
 
@@ -16,9 +16,6 @@ Your code will run inside a Python 2.7.13 sandbox. All tests will be run by call
 Input/output operations are not allowed.
 
 Your solution must be under 32000 characters in length including new lines and and other non-printing characters.
-
-
-# Level one: I Love Lance & Janice
 
 ## Challenge
 
